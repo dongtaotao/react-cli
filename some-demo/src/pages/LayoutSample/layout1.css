@@ -1,0 +1,27 @@
+.app-layout1 {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  text-align: center;
+  background-color: #eee;
+}
+
+.app-layout1 .header {
+  line-height: 60px;
+  border-bottom: 2px solid #fff;
+}
+.app-layout1 .content {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  bottom: 60px;
+  left: 0;
+}
+.app-layout1 .footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  line-height: 60px;
+  border-top: 2px solid #fff;
+}

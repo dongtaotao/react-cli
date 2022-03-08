@@ -1,0 +1,32 @@
+:global(.selectLang) {
+  width: 260px;
+  height: 24px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-color: rgba(153, 129, 129, 0.5);
+  border-radius: 3px;
+
+  select:focus {
+    outline: 0px;
+  }
+
+  select {
+    width: 95%;
+    height: 20px;
+    /* 为下拉小箭头留出一点位置，避免被文字覆盖 */
+    padding-right: 14px;
+    padding-left: 10px;
+    /* 在选择框的最右侧中间显示小箭头图片 */
+    background: url('https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/down4-512.png') no-repeat
+      scroll right center transparent;
+    border: none;
+    /* 很关键：将默认的select选择框样式清除 */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  select::-ms-expand {
+    display: none;
+  }
+}
